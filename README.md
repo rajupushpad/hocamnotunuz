@@ -1,14 +1,34 @@
-# Rate My PRofs
+## Local Setup
+### Install Ruby 2.5.1
+#### Install Homebrew
+- open terminal and run
+```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+#### Install rbenv
+```brew install rbenv```
+#### Install Ruby
+```rbenv install 2.5.1```
+```rbenv global 2.5.1```
+#### Install the Bundler version
+```gem install bundler 2.2.28```
+### Install the required gems
+```bundle install```
+### Install JavaScript packages
+```brew install node```
+```npm install```
+### Set up database
+```bundle e rails db:setup```
+```bundle e rails db:migrate```
+#### Install PostgreSQL
+```brew install postgresql```
+```brew services start postgresql```
+### Run the Rails server
+```bundle e rails s```
+### go to http://localhost:3000
 
-[Live Link](https://rate-my-profs.herokuapp.com/#/)
-## A clone of [Rate My Professors](https://www.ratemyprofessors.com/)
+## Testing
+- to run tests type  ```rspec``` in the terminal and hit enter
 
-<img width="1440" alt="home screen" src="https://user-images.githubusercontent.com/59269773/147616977-6005e590-202c-4e55-a38a-44b5a23917b0.png">
-
-### Summary ###
-Rate My Profs is a complete clone of Rate My Professors, a site where users go to review professors and schools in order to better inform prospecting students. This clone has all of the features of the original site and more.
-
-### Tools Used to build this website clone.
+### Tools Used to build this website.
 
 + React
 + Redux
@@ -189,33 +209,3 @@ groupLikes(profReviews, likes) {
     history={history}
     likes={groupedLikes[profReview.id]}/>)
 ```
-
-## Local Setup
-### Install Ruby 2.5.1
-#### Install Homebrew
-- open terminal and run
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-#### Install rbenv
-```brew install rbenv```
-#### Install Ruby
-```rbenv install 2.5.1```
-```rbenv global 2.5.1```
-#### Install the Bundler version
-```gem install bundler 2.2.28```
-### Install the required gems
-```bundle install```
-### Install JavaScript packages
-```brew install node```
-```npm install```
-### Set up database
-```bundle e rails db:setup```
-```bundle e rails db:migrate```
-#### Install PostgreSQL
-```brew install postgresql```
-```brew services start postgresql```
-### Run the Rails server
-```bundle e rails s```
-### go to http://localhost:3000
-
-## Testing
-- to run tests type  ```rspec``` in the terminal and hit enter

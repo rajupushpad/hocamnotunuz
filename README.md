@@ -5,6 +5,8 @@
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 #### Install rbenv
 ```brew install rbenv```
+#### Install PostgreSQL
+```brew install postgresql```
 #### Install Ruby
 ```rbenv install 2.5.1```
 ```rbenv global 2.5.1```
@@ -15,12 +17,11 @@
 ### Install JavaScript packages
 ```brew install node```
 ```npm install```
+### Start PostgreSQL
+```brew services start postgresql```
 ### Set up database
 ```bundle e rails db:setup```
 ```bundle e rails db:migrate```
-#### Install PostgreSQL
-```brew install postgresql```
-```brew services start postgresql```
 ### Run the Rails server
 ```bundle e rails s```
 ### go to http://localhost:3000

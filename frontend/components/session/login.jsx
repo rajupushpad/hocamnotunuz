@@ -1,12 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+const HEADER_HEIGHT = 65;
+const FOOTER_HEIGHT = 75;
+
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
             password: '',
+            height: window.innerHeight - HEADER_HEIGHT - FOOTER_HEIGHT
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -42,7 +46,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div className='session-form' id='login-form'>
+            <div className='session-form' id='login-form' style={{ height: this.state.height + 'px' }}>
                 <h2 id='login-header'>Log In to Rate My Profs</h2>
                 
                 <form id='login-form-proper'>

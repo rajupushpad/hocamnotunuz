@@ -184,7 +184,7 @@ class NavBar extends React.Component {
         } else {
             if (location.pathname === '/login') {
                 return (
-                    <header>
+                    <header style={{ height: '65px' }}>
                         <div>
                             <div className='nav-bar'>
                                 <Link to='/'><img src={window.logo} alt="Logo" className='logo' /></Link>

@@ -30,7 +30,6 @@ const App = ({ children }) => (
     <div>
         
         <Route path='/' component={NavBarContainer} />
-        <Route path='/' component={Footer} />
         <Switch>
             <Route path='/schools/new' component={CreateSchoolFormContainer} />
             <Route path='/schools/:query' component={SchoolIndexContainer} />
@@ -55,6 +54,7 @@ const App = ({ children }) => (
             <Route path='/404' component={NotFoundPage} />
             <Redirect to='/404' />
         </Switch>
+        <Route path='/' component={Footer} />
     </div>
 );
 

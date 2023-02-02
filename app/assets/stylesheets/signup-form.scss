@@ -2,9 +2,11 @@
 
 .session-form {
     position: relative;
-    top: 200px;
-    margin-left: 110px;
-    margin-bottom: 350px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .session-header {

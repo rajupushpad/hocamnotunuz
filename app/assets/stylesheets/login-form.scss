@@ -5,6 +5,8 @@
     font-size: 52px;
     font-family: 'Pathway Gothic One', sans-serif;
     color: #2e2e2e;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .form-errors {
@@ -15,7 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 150px;
 }
 
 #login-form-proper {
